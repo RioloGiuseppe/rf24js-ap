@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "prepublish": "tsc -outDir \"dist\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -21,14 +22,22 @@
         "ts"
     ],
     "dependencies": {
+        "byte-serializer": "^0.0.5",
         "crc-full": "^1.0.0",
-        "rf24js": "^1.1.4",
-        "byte-serializer": "^0.0.5"
+        "onoff": "^1.1.8",
+        "rf24js": "^2.0.3"
     },
-    "author": "",
+    "author": {
+        "name": "Giuseppe Riolo",
+        "email": "riolo.giuseppe@gmail.com"
+    },
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/RioloGiuseppe/rf24js-ap/issues"
     },
-    "homepage": "https://github.com/RioloGiuseppe/rf24js-ap#readme"
+    "homepage": "https://github.com/RioloGiuseppe/rf24js-ap#readme",
+    "devDependencies": {
+        "@types/node": "^8.0.47",
+        "@types/onoff": "0.0.27"
+    }
 }

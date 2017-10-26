@@ -61,5 +61,6 @@ typings/
 # dotenv environment variables file
 .env
 
+nextRelease.txt
 
-# End of https://www.gitignore.io/api/node
+build/**/*
